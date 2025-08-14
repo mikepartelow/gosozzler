@@ -1,8 +1,9 @@
-package sozzler
+package display
 
 import (
 	"fmt"
 	"io"
+	"mp/sozzler/pkg/sozzler"
 	"os"
 	"strings"
 
@@ -46,7 +47,7 @@ var (
 // List item + delegate
 // -----------------------------------------------------------------------------
 
-type item struct{ recipe *Recipe }
+type item struct{ recipe *sozzler.Recipe }
 
 func (i item) FilterValue() string { return i.recipe.Name }
 
@@ -79,7 +80,7 @@ func (d itemDelegate) Render(w io.Writer, m list.Model, index int, listItem list
 
 type model struct {
 	list     list.Model
-	choice   *Recipe
+	choice   *sozzler.Recipe
 	screen   screen
 	width    int
 	height   int
@@ -153,7 +154,7 @@ func (m model) View() string {
 // Public API
 // -----------------------------------------------------------------------------
 
-func (d *TuiDisplay) List(recipes []*Recipe) {
+func (d *TuiDisplay) List(recipes []*sozzler.Recipe) {
 	var items []list.Item
 	for _, recipe := range recipes {
 		items = append(items, item{recipe: recipe})
@@ -188,7 +189,7 @@ func (d *TuiDisplay) List(recipes []*Recipe) {
 
 // Show remains useful for non-interactive output (e.g., piping)
 // It reuses the same renderer as the interactive detail screen.
-func (d *TuiDisplay) Show(recipe *Recipe) {
+func (d *TuiDisplay) Show(recipe *sozzler.Recipe) {
 	w, _, err := term.GetSize(int(os.Stdout.Fd()))
 	if err != nil || w <= 0 {
 		w = 40

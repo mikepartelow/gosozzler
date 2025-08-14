@@ -3,6 +3,7 @@ package cmd
 import (
 	"context"
 	"fmt"
+	"mp/sozzler/pkg/display"
 	"mp/sozzler/pkg/sozzler"
 	"os"
 
@@ -42,11 +43,11 @@ func init() {
 			return err
 		}
 
-		var display sozzler.Display = &sozzler.StdoutDisplay{
+		var d display.Display = &display.StdoutDisplay{
 			Plain: plain,
 		}
 		if tui {
-			display = &sozzler.TuiDisplay{}
+			d = &display.TuiDisplay{}
 		}
 
 		if color {
@@ -55,7 +56,7 @@ func init() {
 		}
 
 		ctx := context.WithValue(cmd.Context(), "catalog", &catalog)
-		ctx = context.WithValue(ctx, "display", display)
+		ctx = context.WithValue(ctx, "display", d)
 		cmd.SetContext(ctx)
 
 		return nil

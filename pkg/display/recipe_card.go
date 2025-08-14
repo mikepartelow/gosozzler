@@ -1,14 +1,15 @@
-package sozzler
+package display
 
 import (
 	"fmt"
+	"mp/sozzler/pkg/sozzler"
 	"strings"
 
 	"github.com/charmbracelet/lipgloss"
 )
 
 type recipeCard struct {
-	recipe *Recipe
+	recipe *sozzler.Recipe
 	style  lipgloss.Style
 }
 
@@ -60,7 +61,7 @@ func (rc *recipeCard) Ingredients() string {
 	colUnit := unitStyle.Width(unitW)
 
 	var rows []string
-	for _, c := range FancyOrder(rc.recipe.Components) {
+	for _, c := range sozzler.FancyOrder(rc.recipe.Components) {
 		q := colQty.Render(fmt.Sprint(c.Quantity))
 		u := colUnit.Render(strings.TrimSpace(fmt.Sprint(c.Units)))
 		ing := ingStyle.Render(fmt.Sprint(c.Ingredient))
@@ -70,7 +71,7 @@ func (rc *recipeCard) Ingredients() string {
 	return lipgloss.JoinVertical(lipgloss.Left, rows...)
 }
 
-func renderRecipeCard(recipe *Recipe) string {
+func renderRecipeCard(recipe *sozzler.Recipe) string {
 	rc := &recipeCard{
 		recipe: recipe,
 		style: lipgloss.NewStyle().

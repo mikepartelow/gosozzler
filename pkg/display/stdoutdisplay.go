@@ -1,17 +1,10 @@
-package sozzler
+package display
 
 import (
 	"fmt"
+	"mp/sozzler/pkg/sozzler"
 )
 
-type Display interface {
-	Error(string)
-	List([]*Recipe)
-	Show(*Recipe)
-	String(string)
-}
-
-// StdoutDisplay
 type StdoutDisplay struct {
 	Plain bool
 }
@@ -20,15 +13,15 @@ func (d *StdoutDisplay) Error(e string) {
 	fmt.Println(e)
 }
 
-func (d *StdoutDisplay) List(recipes []*Recipe) {
+func (d *StdoutDisplay) List(recipes []*sozzler.Recipe) {
 	for _, r := range recipes {
 		d.printName(r)
 	}
 }
 
-func (d *StdoutDisplay) Show(recipe *Recipe) {
+func (d *StdoutDisplay) Show(recipe *sozzler.Recipe) {
 	d.printName(recipe)
-	for _, c := range FancyOrder(recipe.Components) {
+	for _, c := range sozzler.FancyOrder(recipe.Components) {
 		if d.Plain {
 			fmt.Println(c.Quantity, c.Units, c.Ingredient)
 		} else {
@@ -41,7 +34,7 @@ func (d *StdoutDisplay) Show(recipe *Recipe) {
 	fmt.Println(recipe.Notes)
 }
 
-func (d *StdoutDisplay) printName(r *Recipe) {
+func (d *StdoutDisplay) printName(r *sozzler.Recipe) {
 	if d.Plain {
 		fmt.Println(r.Name)
 		rating := ""

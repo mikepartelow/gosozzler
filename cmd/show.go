@@ -2,6 +2,7 @@ package cmd
 
 import (
 	"fmt"
+	"mp/sozzler/pkg/display"
 	"mp/sozzler/pkg/sozzler"
 
 	"github.com/spf13/cobra"
@@ -20,7 +21,7 @@ to quickly create a Cobra application.`,
 
 	Run: func(cmd *cobra.Command, args []string) {
 		catalog := cmd.Context().Value("catalog").(*sozzler.RecipeCatalog)
-		display := cmd.Context().Value("display").(sozzler.Display)
+		display := cmd.Context().Value("display").(display.Display)
 
 		name := args[0]
 		recipe, ok := catalog.Find(name)

@@ -2,6 +2,7 @@ package cmd
 
 import (
 	"fmt"
+	"mp/sozzler/pkg/display"
 	"mp/sozzler/pkg/sozzler"
 	"strings"
 
@@ -21,7 +22,7 @@ to quickly create a Cobra application.`,
 	Args: cobra.NoArgs,
 	RunE: func(cmd *cobra.Command, args []string) error {
 		catalog := cmd.Context().Value("catalog").(*sozzler.RecipeCatalog)
-		display := cmd.Context().Value("display").(sozzler.Display)
+		display := cmd.Context().Value("display").(display.Display)
 
 		verbose, _ := cmd.Flags().GetBool("verbose")
 
