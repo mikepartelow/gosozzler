@@ -1,0 +1,20 @@
+---
+rating: 4
+components:
+  -
+    quantity: '2/1'
+    ingredient: 'Bourbon'
+    unit: 'oz'
+    index: 0
+  -
+    quantity: '3/4'
+    ingredient: 'Benedictine'
+    unit: 'oz'
+    index: 1
+  -
+    quantity: '2/1'
+    ingredient: 'Orange Bitters'
+    unit: 'dash'
+    index: 2
+name: 'Kentucky Colonel'
+text: 'Stir with ice in a mixing glass, strain into a chilled cocktail glass or over ice in a rocks glass.'

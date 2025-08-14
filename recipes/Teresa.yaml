@@ -1,0 +1,23 @@
+---
+rating: 4
+components:
+  -
+    quantity: '1/1'
+    ingredient: 'Lime Juice'
+    unit: 'oz'
+    index: 2
+  -
+    quantity: '2/1'
+    ingredient: 'Campari'
+    unit: 'oz'
+    index: 0
+  -
+    quantity: '3/4'
+    ingredient: 'Crème de Cassis'
+    unit: 'oz'
+    index: 1
+name: 'Teresa'
+text: |
+  Shake and strain into chilled cocktail glass.
+  
+  Bracingly citrus, intriguingly musty aroma, balanced and weird.

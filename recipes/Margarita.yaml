@@ -1,0 +1,37 @@
+---
+rating: 5
+components:
+  -
+    quantity: '0/1'
+    ingredient: 'Kosher Salt'
+    unit: ''
+    index: 4
+  -
+    quantity: '3/4'
+    ingredient: 'Lime Juice'
+    unit: 'oz'
+    index: 2
+  -
+    quantity: '3/2'
+    ingredient: 'Tequila'
+    unit: 'oz'
+    index: 0
+  -
+    quantity: '1/4'
+    ingredient: 'Agave Syrup'
+    unit: 'oz'
+    index: 3
+  -
+    quantity: '1/1'
+    ingredient: 'Cointreau'
+    unit: 'oz'
+    index: 1
+name: 'Margarita'
+text: |
+  Slide a lime wedge around the rim of a margarita glass.
+  
+  Apply the OUTSIDE of the glass to a plate of kosher salt, avoid salting the inside of the glass.
+  
+  Refrigerate the glass.
+  
+  Shake ingredients with ice, strain into glass.

@@ -1,0 +1,40 @@
+---
+rating: 5
+components:
+  -
+    quantity: '3/1'
+    ingredient: 'Dark Rum'
+    unit: 'oz'
+    index: 0
+  -
+    quantity: '4/1'
+    ingredient: 'Angostura Bitters'
+    unit: 'dash'
+    index: 3
+  -
+    quantity: '1/2'
+    ingredient: 'Demerara Simple Syrup'
+    unit: 'oz'
+    index: 2
+  -
+    quantity: '0/1'
+    ingredient: 'Lime Shell'
+    unit: ''
+    index: 4
+  -
+    quantity: '3/4'
+    ingredient: 'Lime Juice'
+    unit: 'oz'
+    index: 1
+  -
+    quantity: '0/1'
+    ingredient: 'Fresh Mint'
+    unit: ''
+    index: 4
+name: 'Queen''s Park Swizzle'
+text: |
+  In a collins glass, mix ingredients. Drop in shell of juiced lime. Fill the glass with crushed ice and swizzle until the glass frosts over.
+  
+  Garnish with a large sprig of spanked mint. Serve with a straw.
+  
+  Experiment with multiple rums, and different sugars or syrups.

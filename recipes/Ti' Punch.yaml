@@ -1,0 +1,23 @@
+---
+rating: 5
+components:
+  -
+    quantity: '0/1'
+    ingredient: 'Lime Wedge'
+    unit: ''
+    index: 2
+  -
+    quantity: '2/1'
+    ingredient: 'Rhum Agricole'
+    unit: 'oz'
+    index: 0
+  -
+    quantity: '1/4'
+    ingredient: 'Sugar Cane Syrup'
+    unit: 'oz'
+    index: 1
+name: 'Ti'' Punch'
+text: |
+  Pour syrup into rocks glass. Squeeze the lime wedge thoroughly into the syrup, then drop it in. Add the rhum. Stir and let sit before drinking.
+  
+  Don't pay too much attention to measurements. Just mix it up and let the Trade Winds cool your heels.

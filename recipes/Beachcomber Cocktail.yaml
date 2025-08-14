@@ -1,0 +1,28 @@
+---
+rating: 5
+components:
+  -
+    quantity: '1/1'
+    ingredient: 'Cointreau'
+    unit: 'oz'
+    index: 1
+  -
+    quantity: '1/2'
+    ingredient: 'Lime Juice'
+    unit: 'oz'
+    index: 3
+  -
+    quantity: '2/1'
+    ingredient: 'Light Rum'
+    unit: 'oz'
+    index: 0
+  -
+    quantity: '1/4'
+    ingredient: 'Luxardo Liqueur'
+    unit: 'oz'
+    index: 2
+name: 'Beachcomber Cocktail'
+text: |
+  Shake with ice, strain into a chilled cocktail glass.
+  
+  Needs an unassertive rum to highlight the Luxardo/Cointreau combo.

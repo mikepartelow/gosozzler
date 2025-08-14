@@ -1,0 +1,30 @@
+---
+rating: 5
+components:
+  -
+    quantity: '3/2'
+    ingredient: 'Gin'
+    unit: 'oz'
+    index: 0
+  -
+    quantity: '0/1'
+    ingredient: 'Lemon Wedge'
+    unit: ''
+    index: 4
+  -
+    quantity: '3/4'
+    ingredient: 'Simple Syrup'
+    unit: 'oz'
+    index: 2
+  -
+    quantity: '3/4'
+    ingredient: 'Lemon Juice'
+    unit: 'oz'
+    index: 1
+  -
+    quantity: '5/1'
+    ingredient: 'Bitters'
+    unit: 'dash'
+    index: 3
+name: 'Fitzgerald'
+text: 'Shake with ice, strain over ice in a rocks glass. Garnish with lemon wedge.'

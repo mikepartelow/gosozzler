@@ -1,0 +1,20 @@
+---
+rating: 4
+components:
+  -
+    quantity: '3/2'
+    ingredient: 'Gin'
+    unit: 'oz'
+    index: 0
+  -
+    quantity: '1/1'
+    ingredient: 'Cointreau'
+    unit: 'oz'
+    index: 1
+  -
+    quantity: '3/4'
+    ingredient: 'Lemon Juice'
+    unit: 'oz'
+    index: 2
+name: 'White Lady'
+text: 'Shake with ice, strain into chilled cocktail glass.'

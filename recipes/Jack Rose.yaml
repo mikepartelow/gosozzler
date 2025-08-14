@@ -1,0 +1,35 @@
+---
+rating: 3
+components:
+  -
+    quantity: '3/4'
+    ingredient: 'Simple Syrup'
+    unit: 'oz'
+    index: 2
+  -
+    quantity: '3/2'
+    ingredient: 'Applejack'
+    unit: 'oz'
+    index: 0
+  -
+    quantity: '0/1'
+    ingredient: 'Maraschino Cherry'
+    unit: ''
+    index: 6
+  -
+    quantity: '1/4'
+    ingredient: 'Grenadine'
+    unit: 'oz'
+    index: 3
+  -
+    quantity: '3/4'
+    ingredient: 'Lemon Juice'
+    unit: 'oz'
+    index: 1
+  -
+    quantity: '0/1'
+    ingredient: 'Apple Slice'
+    unit: ''
+    index: 5
+name: 'Jack Rose'
+text: 'Shake with ice, strain over ice into a rocks glass. Garnish with apple slice and maraschino cherry.'

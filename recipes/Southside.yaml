@@ -1,0 +1,38 @@
+---
+rating: 5
+components:
+  -
+    quantity: '0/1'
+    ingredient: 'Lemon Peel'
+    unit: ''
+    index: 4
+  -
+    quantity: '2/1'
+    ingredient: 'Club Soda'
+    unit: 'oz'
+    index: 1
+  -
+    quantity: '0/1'
+    ingredient: 'Fresh Mint'
+    unit: ''
+    index: 4
+  -
+    quantity: '2/1'
+    ingredient: 'Gin'
+    unit: 'oz'
+    index: 0
+  -
+    quantity: '1/1'
+    ingredient: 'Turbinado Sugar'
+    unit: 'Tbsp'
+    index: 3
+  -
+    quantity: '3/4'
+    ingredient: 'Lemon Juice'
+    unit: 'oz'
+    index: 2
+name: 'Southside'
+text: |
+  In a glass, thoroughly mix the sugar, gin, and lemon juice. Gently muddle 1 sprig of mint. Add ice and stir until glass is frosty. Add highly-carbonated club soda and stir a little more.
+  
+  Garnish with mint and lemon peel.

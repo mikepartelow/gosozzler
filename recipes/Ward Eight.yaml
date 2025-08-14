@@ -1,0 +1,33 @@
+---
+rating: 5
+components:
+  -
+    quantity: '1/4'
+    ingredient: 'Grenadine'
+    unit: 'oz'
+    index: 3
+  -
+    quantity: '2/1'
+    ingredient: 'Rye'
+    unit: 'oz'
+    index: 0
+  -
+    quantity: '3/4'
+    ingredient: 'Lemon Juice'
+    unit: 'oz'
+    index: 2
+  -
+    quantity: '1/1'
+    ingredient: 'Simple Syrup'
+    unit: 'oz'
+    index: 1
+  -
+    quantity: '0/1'
+    ingredient: 'Maraschino Cherry'
+    unit: ''
+    index: 4
+name: 'Ward Eight'
+text: |
+  Shake with ice, strain over ice into an old fashioned glass and garnish with cherry.
+  
+  This is a big drink, do not use a small old fashioned glass! A very nice drink to highlight Rendezvous Rye.

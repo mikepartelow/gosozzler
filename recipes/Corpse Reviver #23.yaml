@@ -1,0 +1,35 @@
+---
+rating: 4
+components:
+  -
+    index: 0
+    quantity: '3/4'
+    unit: 'oz'
+    ingredient: 'Barr Hill Gin'
+  -
+    index: 1
+    quantity: '3/4'
+    unit: 'oz'
+    ingredient: 'Cocchi Americano'
+  -
+    index: 2
+    quantity: '3/4'
+    unit: 'oz'
+    ingredient: 'Clément Créole Shrubb'
+  -
+    index: 3
+    quantity: '3/4'
+    unit: 'oz'
+    ingredient: 'lemon juice'
+  -
+    index: 4
+    quantity: '1/8'
+    unit: 'oz'
+    ingredient: 'Emperor Norton Absinthe Dieu'
+  -
+    index: 5
+    quantity: '5/1'
+    unit: 'dash'
+    ingredient: 'Bittermens Hopped Grapefruit Cocktail Bitter'
+text: 'Shake with ice, strain into chilled, small cocktail glass. Garnish with lemon peel.'
+name: 'Corpse Reviver #23'

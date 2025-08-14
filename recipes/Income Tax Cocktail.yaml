@@ -1,0 +1,35 @@
+---
+rating: 3
+components:
+  -
+    quantity: '1/4'
+    ingredient: 'Dry Vermouth'
+    unit: 'oz'
+    index: 2
+  -
+    quantity: '2/1'
+    ingredient: 'Gin'
+    unit: 'oz'
+    index: 0
+  -
+    quantity: '3/1'
+    ingredient: 'Bitters'
+    unit: 'dash'
+    index: 4
+  -
+    quantity: '1/4'
+    ingredient: 'Sweet Vermouth'
+    unit: 'oz'
+    index: 1
+  -
+    quantity: '1/1'
+    ingredient: 'Orange Juice'
+    unit: 'oz'
+    index: 3
+  -
+    quantity: '0/1'
+    ingredient: 'Orange Twist'
+    unit: ''
+    index: 5
+name: 'Income Tax Cocktail'
+text: 'Shake with ice and strain into chilled cocktail glass. Garnish with orange twist. Don''t skimp on bitters or sweet vermouth.'
