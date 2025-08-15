@@ -1,0 +1,20 @@
+---
+rating: 3
+components:
+  -
+    quantity: '1/4'
+    ingredient: 'Amaretto'
+    unit: 'oz'
+    index: 2
+  -
+    quantity: '3/2'
+    ingredient: 'Bourbon'
+    unit: 'oz'
+    index: 0
+  -
+    quantity: '1/1'
+    ingredient: 'Lemon Juice'
+    unit: 'oz'
+    index: 1
+name: 'Stiletto'
+text: 'Shake with ice, strain into ice-filled old fashioned glass.'

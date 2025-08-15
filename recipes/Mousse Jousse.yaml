@@ -1,0 +1,35 @@
+---
+rating: 4
+components:
+  -
+    quantity: '2/1'
+    ingredient: 'Rhum Agricole'
+    unit: 'oz'
+    index: 0
+  -
+    quantity: '1/1'
+    ingredient: 'Grapefruit Juice'
+    unit: 'oz'
+    index: 1
+  -
+    quantity: '1/2'
+    ingredient: 'Joseph Cartron Pamplemousse Rose'
+    unit: 'oz'
+    index: 3
+  -
+    quantity: '1/2'
+    ingredient: 'Lemon Juice'
+    unit: 'oz'
+    index: 2
+  -
+    quantity: '10/1'
+    ingredient: 'Grapefruit Bitters'
+    unit: 'dash'
+    index: 5
+  -
+    quantity: '1/2'
+    ingredient: 'Sugar Cane Syrup'
+    unit: 'oz'
+    index: 4
+name: 'Mousse Jousse'
+text: 'Shake with ice, strain into chilled Martini glass. Garnish with grapefruit peel and lemon peel.'

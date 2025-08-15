@@ -1,0 +1,20 @@
+---
+text: 'Shake with ice, strain into chilled cocktail glass.'
+name: 'Aviation'
+components:
+  -
+    index: 0
+    quantity: '2/1'
+    unit: 'oz'
+    ingredient: 'gin'
+  -
+    index: 1
+    quantity: '3/4'
+    unit: 'oz'
+    ingredient: 'Luxardo Liqueur'
+  -
+    index: 2
+    quantity: '1/2'
+    unit: 'oz'
+    ingredient: 'lemon juice'
+rating: 4

@@ -1,0 +1,39 @@
+---
+rating: 5
+components:
+  -
+    quantity: '2/1'
+    ingredient: 'Club Soda'
+    unit: 'oz'
+    index: 3
+  -
+    quantity: '2/1'
+    ingredient: 'Rhum Agricole'
+    unit: 'oz'
+    index: 0
+  -
+    quantity: '1/2'
+    ingredient: 'Lime'
+    unit: ''
+    index: 2
+  -
+    quantity: '0/1'
+    ingredient: 'Mint Leaves'
+    unit: ''
+    index: 4
+  -
+    quantity: '1/2'
+    ingredient: 'Turbinado Sugar'
+    unit: 'oz'
+    index: 1
+name: 'Martinique Mojito'
+text: |
+  Cut a wheel off the lime for garnish. Cut the lime into 4 wedges. In a rocks glass, muddle the sugar and the lime. Stir well to dissolve sugar.
+  
+  Add mint leaves (about 10), and bruise them gently with a muddler. Add the rhum, fill to top with crushed ice. Top off with club soda. Attach shaker and shake. 
+  
+  Garnish with a lime wheel and a sprig of slapped mint.
+  
+  Mixing is the key. Experiment with different mixing methods (stir instead of shake, etc).
+  
+  Pint glass works.

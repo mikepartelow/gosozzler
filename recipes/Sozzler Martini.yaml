@@ -1,0 +1,20 @@
+---
+rating: 5
+components:
+  -
+    quantity: '2/1'
+    ingredient: 'Greylock Gin'
+    unit: 'oz'
+    index: 0
+  -
+    quantity: '1/2'
+    ingredient: 'Vya Dry Vermouth'
+    unit: 'oz'
+    index: 1
+  -
+    quantity: '2/1'
+    ingredient: 'Castelvetrano Olive'
+    unit: ''
+    index: 2
+name: 'Sozzler Martini'
+text: 'Stir vigorously with ice in a mixing glass. Strain into chilled martini glass. Garnish with pitted Castelvetrano Olives.'
