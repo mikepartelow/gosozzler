@@ -27,6 +27,7 @@ var listCmd = &cobra.Command{
 
 		if len(predicates) == 0 {
 			display.List(catalog.Recipes)
+
 			return nil
 		}
 

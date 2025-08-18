@@ -1,7 +1,7 @@
 .PHONY: test
 
 all: test 
-	go build -race .
+	go build .
 
 fmt:
 	go fmt ./...
