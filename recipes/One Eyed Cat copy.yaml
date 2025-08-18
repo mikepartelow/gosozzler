@@ -1,0 +1,48 @@
+---
+rating: 4
+components:
+  -
+    quantity: '2/1'
+    ingredient: 'Rhum Agricole'
+    unit: 'oz'
+    index: 0
+  -
+    quantity: '3/4'
+    ingredient: 'Grapefruit Juice'
+    unit: 'oz'
+    index: 0
+  -
+    quantity: '1/2'
+    ingredient: 'Maple Syrup'
+    unit: 'oz'
+    index: 0
+  -
+    quantity: '1/4'
+    ingredient: 'Clément Créole Shrubb'
+    unit: 'oz'
+    index: 0
+  -
+    quantity: '2/1'
+    ingredient: 'Angostura Bitters'
+    unit: 'dash'
+    index: 0
+  -
+    quantity: '1/1'
+    ingredient: 'Mint Sprig'
+    unit:
+    index: 0
+  -
+    quantity: '1/1'
+    ingredient: 'Crushed Ice'
+    unit:
+    index: 0
+name: 'ChatGPT Swizzle'
+text: 'Add rhum agricole, grapefruit juice, lime juice, maple syrup, and orange liqueur to a 9 ounce Collins glass.
+
+Fill halfway with crushed ice and swizzle until the glass frosts.
+
+Top with more crushed ice to create a mound above the rim.
+
+Dash bitters over the top.
+
+Garnish and serve with a straw.'
