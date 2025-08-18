@@ -1,37 +1,25 @@
 ---
 rating: 4
 components:
-  -
-    quantity: '2/1'
+  - quantity: '2/1'
     ingredient: 'Rhum Agricole'
     unit: 'oz'
-    index: 0
-  -
-    quantity: '1/1'
+  - quantity: '1/1'
     ingredient: 'Campari'
     unit: 'oz'
-    index: 0
-  -
-    quantity: '1/1'
+  - quantity: '1/1'
     ingredient: 'Sweet Vermouth'
     unit: 'oz'
-    index: 0
-  -
-    quantity: '1/1'
+  - quantity: '1/1'
     ingredient: 'Maple Syrup'
     unit: 'oz'
-    index: 0
-  -
-    quantity: '3/4'
+  - quantity: '3/4'
     ingredient: 'Lime Juice'
     unit: 'oz'
-    index: 0
-  -
-    quantity: '1/1'
+  - quantity: '1/1'
     ingredient: 'Dried Orange Wheel'
     unit:
-    index: 0
 name: 'One Eyed Cat'
 text: 'Mix with ice, strain into iced cocktail glasses. Garnish with dried orange wheel.
 
-You can swap the quantities of syrup and lime juice for a variation (Left Eyed One Eyed Cat vs Right Eyed One Eyed Cat).'
+  You can swap the quantities of syrup and lime juice for a variation (Left Eyed One Eyed Cat vs Right Eyed One Eyed Cat).'

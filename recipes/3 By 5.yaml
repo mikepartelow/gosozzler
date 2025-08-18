@@ -1,20 +1,14 @@
 ---
 rating: 4
 components:
-  -
-    quantity: '3/4'
+  - quantity: '3/4'
     ingredient: 'Lime Juice'
     unit: 'oz'
-    index: 2
-  -
-    quantity: '3/4'
+  - quantity: '3/4'
     ingredient: 'Crème de Cassis'
     unit: 'oz'
-    index: 1
-  -
-    quantity: '2/1'
+  - quantity: '2/1'
     ingredient: 'Campari Sorbet'
     unit: 'oz'
-    index: 0
 name: '3 By 5'
 text: 'Shake with ice, strain into chilled cocktail glass.'

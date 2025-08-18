@@ -1,35 +1,25 @@
 ---
 rating: 5
 components:
-  -
-    quantity: '3/4'
+  - quantity: '3/4'
     ingredient: 'Orange Juice'
     unit: 'oz'
-    index: 3
-  -
-    quantity: '3/4'
+  - quantity: '3/4'
     ingredient: 'Peter Heering Cherry Liqueur'
     unit: 'oz'
-    index: 1
-  -
-    quantity: '3/4'
+  - quantity: '3/4'
     ingredient: 'Sweet Vermouth'
     unit: 'oz'
-    index: 2
-  -
-    quantity: '3/4'
+  - quantity: '3/4'
     ingredient: 'Scotch'
     unit: 'oz'
-    index: 0
-  -
-    quantity: '0/1'
+  - quantity: '0/1'
     ingredient: 'Orange Peel'
     unit: ''
-    index: 4
 name: 'Blood and Sand'
 text: |
   Shake with ice, strain into chilled cocktail glass. Garnish with flamed orange peel.
-  
+
   Great with Yamazaki Scotch, Dolin vermouth. Try a more assertive Scotch to toss it just a little out of balance.
-  
+
   Pairs well with dark chocolate.

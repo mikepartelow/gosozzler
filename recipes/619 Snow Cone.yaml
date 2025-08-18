@@ -1,45 +1,29 @@
 ---
 rating: 4
 components:
-  -
-    quantity: '1/1'
+  - quantity: '1/1'
     ingredient: 'Saffron'
     unit: 'g'
-    index: 7
-  -
-    quantity: '1/2'
+  - quantity: '1/2'
     ingredient: 'Ginger Syrup'
     unit: 'oz'
-    index: 4
-  -
-    quantity: '2/1'
+  - quantity: '2/1'
     ingredient: 'Grapefruit Juice'
     unit: 'oz'
-    index: 1
-  -
-    quantity: '5/1'
+  - quantity: '5/1'
     ingredient: 'Crushed Juniper Berries'
     unit: ''
-    index: 6
-  -
-    quantity: '1/2'
+  - quantity: '1/2'
     ingredient: 'Grand Marnier'
     unit: 'oz'
-    index: 3
-  -
-    quantity: '3/2'
+  - quantity: '3/2'
     ingredient: 'Old Raj Gin 110 Proof'
     unit: 'oz'
-    index: 0
-  -
-    quantity: '5/1'
+  - quantity: '5/1'
     ingredient: 'Fee Brothers Aromatic Bitters'
     unit: 'dash'
-    index: 5
-  -
-    quantity: '1/1'
+  - quantity: '1/1'
     ingredient: 'Lemon Juice'
     unit: 'oz'
-    index: 2
 name: '619 Snow Cone'
 text: 'Shake with ice, strain into a crushed-ice filled collins glass.'
