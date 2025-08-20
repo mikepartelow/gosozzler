@@ -27,7 +27,7 @@ var showCmd = &cobra.Command{
 
 		scale, _ := cmd.Flags().GetInt("scale")
 		for idx, _ := range recipe.Components {
-			recipe.Components[idx].Quantity *= sozzler.FractionFloat64(scale)
+			recipe.Components[idx].Quantity = recipe.Components[idx].Quantity.Scale(scale)
 		}
 
 		display.Show(recipe)
