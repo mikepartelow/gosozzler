@@ -1,26 +1,40 @@
 ---
 rating: 5
 components:
-  - quantity: '1/2'
+  -
+    quantity: '1/2'
     ingredient: 'Orange Wheel'
     unit: ''
-  - quantity: '1/2'
+    index: 5
+  -
+    quantity: '1/2'
     ingredient: 'Maple Syrup'
     unit: 'oz'
-  - quantity: '1/2'
+    index: 1
+  -
+    quantity: '1/2'
     ingredient: 'Orange Juice'
     unit: 'oz'
-  - quantity: '4/1'
+    index: 2
+  -
+    quantity: '4/1'
     ingredient: 'Angostura Bitters'
     unit: 'dash'
-  - quantity: '2/1'
+    index: 4
+  -
+    quantity: '2/1'
     ingredient: 'Bourbon'
     unit: 'oz'
-  - quantity: '1/4'
+    index: 0
+  -
+    quantity: '1/4'
     ingredient: 'Lemon Juice'
     unit: 'oz'
-  - quantity: '3/2'
+    index: 3
+  -
+    quantity: '3/2'
     ingredient: 'Club Soda'
     unit: 'oz'
+    index: 6
 name: 'Rick''s Maple Bourbon Esmash'
 text: 'Chill a martini glass. Cut an orange wedge and set aside some lemon peel for garnish. Shake everything but the club soda. Gently stir in the club soda. Strain into chilled glasses, garnish with orange wheel.'

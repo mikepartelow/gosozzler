@@ -1,11 +1,15 @@
 ---
 rating: 4
 components:
-  - quantity: '3/2'
+  -
+    quantity: '3/2'
     ingredient: 'Suntory Yamazaki 12 Year Scotch'
     unit: 'oz'
-  - quantity: '3/4'
+    index: 0
+  -
+    quantity: '3/4'
     ingredient: 'Amaretto'
     unit: 'oz'
+    index: 1
 name: 'Yakuza Godfather (Oyabun)'
 text: 'Build over ice in a rocks glass. Stir.'

@@ -1,23 +1,35 @@
 ---
 rating: 5
 components:
-  - quantity: '1/2'
+  -
+    quantity: '1/2'
     ingredient: 'Luxardo Liqueur'
     unit: 'oz'
-  - quantity: '1/1'
+    index: 1
+  -
+    quantity: '1/1'
     ingredient: 'Turbinado Sugar'
     unit: 'Tbsp'
-  - quantity: '0/1'
+    index: 2
+  -
+    quantity: '0/1'
     ingredient: 'Lime Wheel'
     unit: ''
-  - quantity: '1/2'
+    index: 5
+  -
+    quantity: '1/2'
     ingredient: 'Lime Juice'
     unit: 'oz'
-  - quantity: '1/2'
+    index: 4
+  -
+    quantity: '1/2'
     ingredient: 'Grapefruit Juice'
     unit: 'oz'
-  - quantity: '2/1'
+    index: 3
+  -
+    quantity: '2/1'
     ingredient: 'Rhum Agricole'
     unit: 'oz'
+    index: 0
 name: 'Crunchy Hemingway Daiquiri'
 text: 'Shake without ice to dissolve sugar. Shake with ice, strain into a chilled goblet. Garnish with lime wheel.'

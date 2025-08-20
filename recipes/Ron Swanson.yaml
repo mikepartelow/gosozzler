@@ -1,8 +1,10 @@
 ---
 rating: 4
 components:
-  - quantity: '2/1'
+  -
+    quantity: '2/1'
     ingredient: 'Lagavulin 16 Year Old Scotch Whisky'
     unit: 'oz'
+    index: 0
 name: 'Ron Swanson'
 text: 'Pour scotch into rocks glass. Serve neat.'

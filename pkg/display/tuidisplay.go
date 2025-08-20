@@ -10,6 +10,7 @@ import (
 	"github.com/charmbracelet/bubbles/list"
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/charmbracelet/lipgloss"
+	"golang.org/x/term"
 )
 
 type TuiDisplay struct{}
@@ -39,6 +40,7 @@ var (
 	selectedItemStyle = lipgloss.NewStyle().PaddingLeft(2).Foreground(lipgloss.Color("170"))
 	paginationStyle   = list.DefaultStyles().PaginationStyle.PaddingLeft(4)
 	helpStyle         = list.DefaultStyles().HelpStyle.PaddingLeft(4).PaddingBottom(1)
+	quitTextStyle     = lipgloss.NewStyle().Margin(1, 0, 2, 4)
 )
 
 // -----------------------------------------------------------------------------
@@ -69,7 +71,7 @@ func (d itemDelegate) Render(w io.Writer, m list.Model, index int, listItem list
 		}
 	}
 
-	_, _ = fmt.Fprint(w, fn(str))
+	fmt.Fprint(w, fn(str))
 }
 
 // -----------------------------------------------------------------------------
@@ -188,5 +190,10 @@ func (d *TuiDisplay) List(recipes []*sozzler.Recipe) {
 // Show remains useful for non-interactive output (e.g., piping)
 // It reuses the same renderer as the interactive detail screen.
 func (d *TuiDisplay) Show(recipe *sozzler.Recipe) {
+	w, _, err := term.GetSize(int(os.Stdout.Fd()))
+	if err != nil || w <= 0 {
+		w = 40
+	}
+
 	fmt.Println(renderRecipeCard(recipe))
 }

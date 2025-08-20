@@ -1,17 +1,23 @@
 ---
 rating: 5
 components:
-  - quantity: '2/1'
+  -
+    quantity: '2/1'
     ingredient: 'Gin'
     unit: 'oz'
-  - quantity: '0/1'
+    index: 0
+  -
+    quantity: '0/1'
     ingredient: 'Lime Wedge'
     unit: ''
-  - quantity: '3/1'
+    index: 2
+  -
+    quantity: '3/1'
     ingredient: 'Tonic Water'
     unit: 'oz'
+    index: 1
 name: 'Gin and Tonic'
 text: |
   Pour the gin into a chilled rocks glass with ice. Top with the tonic. Garnish with the lime wedge and bar straws.
-
+  
   Remember to pour the gin before the tonic, otherwise you will have made a Tonic and Gin, an inferior drink.

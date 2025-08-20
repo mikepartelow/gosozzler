@@ -1,17 +1,25 @@
 ---
 rating: 4
 components:
-  - quantity: '1/2'
+  -
+    quantity: '1/2'
     ingredient: 'Lemon Juice'
     unit: 'oz'
-  - quantity: '2/1'
+    index: 2
+  -
+    quantity: '2/1'
     ingredient: 'Gin'
     unit: 'oz'
-  - quantity: '3/4'
+    index: 0
+  -
+    quantity: '3/4'
     ingredient: 'Honey Syrup'
     unit: 'oz'
-  - quantity: '0/1'
+    index: 1
+  -
+    quantity: '0/1'
     ingredient: 'Lemon Peel'
     unit: ''
+    index: 3
 name: 'Bee''s Knees'
 text: 'Shake with ice, strain into a chilled cocktail glass, garnish with flamed lemon peel.'

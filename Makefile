@@ -1,23 +1,10 @@
-.PHONY: all fmt lint test build ci
+.PHONY: test
 
-GO  ?= go
-PKG ?= ./...
-
-all: test
+all: test 
+	go build -race .
 
 fmt:
-	$(GO) fmt $(PKG)
-
-# Requires golangci-lint installed locally (brew install golangci-lint or see docs)
-lint:
-	@command -v golangci-lint >/dev/null 2>&1 || { echo "golangci-lint not installed"; exit 1; }
-	golangci-lint run
+	go fmt ./...
 
 test:
-	$(GO) test -race -cover $(PKG)
-
-build:
-	$(GO) build .
-
-# What CI runs locally
-ci: fmt lint test build
+	go test -race -cover ./...	

@@ -1,23 +1,33 @@
 ---
 rating: 5
 components:
-  - quantity: '2/1'
+  -
+    quantity: '2/1'
     ingredient: 'Rye'
     unit: 'oz'
-  - quantity: '5/1'
+    index: 0
+  -
+    quantity: '5/1'
     ingredient: 'Bitters'
     unit: 'dash'
-  - quantity: '1/1'
+    index: 2
+  -
+    quantity: '1/1'
     ingredient: 'Sugar Cube'
     unit: ''
-  - quantity: '0/1'
+    index: 1
+  -
+    quantity: '0/1'
     ingredient: 'Maraschino Cherry'
     unit: ''
-  - quantity: '0/1'
+    index: 4
+  -
+    quantity: '0/1'
     ingredient: 'Orange Wheel'
     unit: ''
+    index: 3
 name: 'Old Fashioned'
 text: |
   In an old fashioned glass, dash the bitters on to the sugar cube. Add the orange wheel and optional cherry. Muddle well.
-
+  
   Fill glass with ice cubes, add top quality rye, stir.

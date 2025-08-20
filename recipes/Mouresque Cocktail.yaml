@@ -1,11 +1,15 @@
 ---
 rating: 4
 components:
-  - quantity: '2/1'
+  -
+    quantity: '2/1'
     ingredient: 'Absinthe'
     unit: 'oz'
-  - quantity: '1/1'
+    index: 0
+  -
+    quantity: '1/1'
     ingredient: 'Orgeat'
     unit: 'oz'
+    index: 1
 name: 'Mouresque Cocktail'
 text: 'Shake and strain into chilled cocktail glass, or serve in an ice filled highball topped with water.'

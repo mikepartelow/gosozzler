@@ -1,17 +1,25 @@
 ---
 rating: 5
 components:
-  - quantity: '1/2'
+  -
+    quantity: '1/2'
     ingredient: 'Lime Juice'
     unit: 'oz'
-  - quantity: '1/1'
+    index: 2
+  -
+    quantity: '1/1'
     ingredient: 'Lime Wedge'
     unit: ''
-  - quantity: '1/1'
+    index: 3
+  -
+    quantity: '1/1'
     ingredient: 'St. Germain'
     unit: 'oz'
-  - quantity: '2/1'
+    index: 1
+  -
+    quantity: '2/1'
     ingredient: 'Gin'
     unit: 'oz'
+    index: 0
 name: 'French Gimlet'
 text: 'Shake with ice, strain into a chilled rocks glass. Garnish with lime wedge.'

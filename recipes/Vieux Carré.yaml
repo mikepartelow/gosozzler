@@ -1,26 +1,38 @@
 ---
 rating: 3
 components:
-  - quantity: '1/1'
+  -
+    quantity: '1/1'
     ingredient: 'Peychaud''s Bitters'
     unit: 'dash'
-  - quantity: '1/4'
+    index: 4
+  -
+    quantity: '1/4'
     ingredient: 'Benedictine'
     unit: 'oz'
-  - quantity: '3/4'
+    index: 3
+  -
+    quantity: '3/4'
     ingredient: 'Rye'
     unit: 'oz'
-  - quantity: '3/4'
+    index: 0
+  -
+    quantity: '3/4'
     ingredient: 'Sweet Vermouth'
     unit: 'oz'
-  - quantity: '1/1'
+    index: 2
+  -
+    quantity: '1/1'
     ingredient: 'Angostura Bitters'
     unit: 'dash'
-  - quantity: '3/4'
+    index: 5
+  -
+    quantity: '3/4'
     ingredient: 'Brandy'
     unit: 'oz'
+    index: 1
 name: 'Vieux Carré'
 text: |
   Build over ice in a rocks glass. Stir.
-
+  
   Use good quality brandy.
