@@ -1,20 +1,14 @@
 ---
 rating: 4
 components:
-  -
-    quantity: '3/2'
+  - quantity: '3/2'
     ingredient: 'Dark Rum'
     unit: 'oz'
-    index: 0
-  -
-    quantity: '4/1'
+  - quantity: '4/1'
     ingredient: 'Ginger Beer'
     unit: 'oz'
-    index: 1
-  -
-    quantity: '0/1'
+  - quantity: '0/1'
     ingredient: 'Lime Wedge'
     unit: ''
-    index: 2
 name: 'Dark and Stormy'
 text: 'Pour the rum over ice in a highball glass. Fill with ginger beer. Squeeze in lime wedge. Results vary depending on rum and ginger beer selections.'

@@ -1,25 +1,17 @@
 ---
 rating: 3
 components:
-  -
-    quantity: '1/4'
+  - quantity: '1/4'
     ingredient: 'Grenadine'
     unit: 'oz'
-    index: 3
-  -
-    quantity: '1/4'
+  - quantity: '1/4'
     ingredient: 'Absinthe'
     unit: 'oz'
-    index: 2
-  -
-    quantity: '3/4'
+  - quantity: '3/4'
     ingredient: 'Orange Juice'
     unit: 'oz'
-    index: 1
-  -
-    quantity: '5/2'
+  - quantity: '5/2'
     ingredient: 'Gin'
     unit: 'oz'
-    index: 0
 name: 'Monkey Gland'
 text: 'Shake with ice, strain into chilled cocktail glass.'

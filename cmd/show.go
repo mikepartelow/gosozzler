@@ -15,8 +15,8 @@ var showCmd = &cobra.Command{
 	Args: cobra.ExactArgs(1),
 
 	Run: func(cmd *cobra.Command, args []string) {
-		catalog := cmd.Context().Value("catalog").(*sozzler.RecipeCatalog)
-		display := cmd.Context().Value("display").(display.Display)
+		catalog := cmd.Context().Value(catalogKey{}).(*sozzler.RecipeCatalog)
+		display := cmd.Context().Value(displayKey{}).(display.Display)
 
 		name := args[0]
 		recipe, ok := catalog.Find(name)
@@ -26,7 +26,7 @@ var showCmd = &cobra.Command{
 		}
 
 		scale, _ := cmd.Flags().GetInt("scale")
-		for idx, _ := range recipe.Components {
+		for idx := range recipe.Components {
 			recipe.Components[idx].Quantity *= sozzler.FractionFloat64(scale)
 		}
 

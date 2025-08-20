@@ -1,33 +1,23 @@
 ---
 rating: 5
 components:
-  -
-    quantity: '0/1'
+  - quantity: '0/1'
     ingredient: 'Maraschino Cherry'
     unit: ''
-    index: 4
-  -
-    quantity: '2/1'
+  - quantity: '2/1'
     ingredient: 'Rye'
     unit: 'oz'
-    index: 0
-  -
-    quantity: '1/4'
+  - quantity: '1/4'
     ingredient: 'Grenadine'
     unit: 'oz'
-    index: 3
-  -
-    quantity: '3/4'
+  - quantity: '3/4'
     ingredient: 'Lemon Juice'
     unit: 'oz'
-    index: 2
-  -
-    quantity: '3/4'
+  - quantity: '3/4'
     ingredient: 'Maple Syrup'
     unit: 'oz'
-    index: 1
 name: 'Ward Nine'
 text: |
   Shake with ice, strain over ice into an old fashioned glass and garnish with cherry.
-  
+
   This is a big drink, do not use a small glass!

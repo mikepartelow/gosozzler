@@ -1,33 +1,20 @@
 ---
 rating: 4
 components:
-  -
-    quantity: '3/4'
+  - quantity: '3/4'
     ingredient: 'Campari'
     unit: 'oz'
-    index: 1
-  -
-    quantity: '1/4'
+  - quantity: '1/4'
     ingredient: 'Lime Juice'
     unit: 'oz'
-    index: 4
-  -
-    quantity: '3/2'
+  - quantity: '3/2'
     ingredient: 'Gin'
     unit: 'oz'
-    index: 0
-  -
-    quantity: '1/2'
+  - quantity: '1/2'
     ingredient: 'Maple Syrup'
     unit: 'oz'
-    index: 3
-  -
-    quantity: '1/1'
+  - quantity: '1/1'
     ingredient: 'Grapefruit Juice'
     unit: 'oz'
-    index: 2
 name: 'Montara Sunset'
-text: |
-  Shake with ice and strain into a chilled cocktail glass, or over ice in a rocks glass. 
-  
-  Lime juice may be omitted.
+text: "Shake with ice and strain into a chilled cocktail glass, or over ice in a rocks glass. \n\nLime juice may be omitted.\n"
