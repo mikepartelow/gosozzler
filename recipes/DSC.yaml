@@ -1,0 +1,27 @@
+name: Date Shake Cocktail
+text: |-
+    Prepare a garnish of lemon peel, orange wheel, and 1 date.
+    Put second date in a rocks glass full of ice.
+    Shake the rest, strain into rocks glass, garnish.
+    Also try coupe glass.
+    Try adding nutmeg,
+components:
+    - ingredient: bourbon or rye
+      quantity: "2"
+      unit: ounce
+    - ingredient: date nectar (different than date syrup)
+      quantity: 1/4
+      unit: ounce
+    - ingredient: lemon juice
+      quantity: 1/4
+      unit: ounce
+    - ingredient: fee bros orange bitters
+      quantity: "3"
+      unit: solid dashes
+    - ingredient: pitted deglet noor dates
+      quantity: "2"
+      unit: ""
+    - ingredient: dried orange wheel
+      quantity: "1"
+      unit: ""
+rating: 0

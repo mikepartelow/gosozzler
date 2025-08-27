@@ -7,7 +7,7 @@ import (
 type Component struct {
 	Ingredient string   `yaml:"ingredient"`
 	Quantity   Quantity `yaml:"quantity"`
-	Units      string   `yaml:"unit"`
+	Unit       string   `yaml:"unit"`
 }
 
 type Recipe struct {
@@ -28,16 +28,16 @@ func (r *Recipe) FancyRating() string {
 func FancyOrder(components []Component) []Component {
 	sort.Slice(components, func(i, j int) bool {
 		ci, cj := components[i], components[j]
-		if ci.Units == cj.Units {
+		if ci.Unit == cj.Unit {
 			if ci.Quantity == cj.Quantity {
 				return ci.Ingredient < cj.Ingredient
 			}
 			return ci.Quantity.Float() > cj.Quantity.Float()
 		}
-		if ci.Units == "" {
+		if ci.Unit == "" {
 			return false
 		}
-		if cj.Units == "" {
+		if cj.Unit == "" {
 			return true
 		}
 		// FIXME: have some conversion table that normalizes all quantities into grams
