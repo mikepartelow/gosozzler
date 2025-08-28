@@ -10,22 +10,33 @@ import (
 	"gopkg.in/yaml.v3"
 )
 
-// importCmd represents the import command
 var importCmd = &cobra.Command{
 	Use:   "import",
-	Short: "Read a Markdown recipe from stdin and print JSON",
-	Long: `Reads Markdown from standard input, expects a format like EXHIBIT A,
-and parses it into the JSON schema shown in EXHIBIT B (Recipe, Components, etc).
-Outputs the resulting JSON to stdout.`,
+	Short: "Parse a recipe from stdin into Sozzler Recipe YAML format and print it to stdout",
+	Long: `Parse a recipe from standard input (example follows) and print a YAML representation to stdout.
+
+Example input (between the --- lines):
+---
+Banana Fabrication
+
+2 oz Rhum agricole
+3/4 oz Clement Créole Shrubb
+1/2 oz banana juice
+1/8 dash bitters
+Lime wheel
+
+Shake ingredients with ice. Stir ingredients with dry ice. Correct spelling errors, strain into chilled coconut shell.
+---
+`,
 	RunE: func(cmd *cobra.Command, args []string) error {
 		stat, _ := os.Stdin.Stat()
 		if (stat.Mode() & os.ModeCharDevice) != 0 {
-			return fmt.Errorf("no stdin detected: pipe Markdown into this command, e.g. `cat recipe.md | gosozzler import`")
+			return fmt.Errorf("no stdin detected: pipe a recipe into this command, e.g. `cat recipe.txt | gosozzler import`")
 		}
 
 		reader := bufio.NewReader(os.Stdin)
 
-		parser := sozzler.MarkdownParser{}
+		parser := sozzler.RecipeParser{}
 		recipe, err := parser.Parse(reader)
 		if err != nil {
 			return fmt.Errorf("error parsing markdown: %w", err)

@@ -12,7 +12,7 @@ import (
 
 var listCmd = &cobra.Command{
 	Use:   "list",
-	Short: "List and search recipes.",
+	Short: "List and search recipes",
 	Args:  cobra.NoArgs,
 	RunE: func(cmd *cobra.Command, args []string) error {
 		catalog := cmd.Context().Value("catalog").(*sozzler.RecipeCatalog)

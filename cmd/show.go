@@ -10,7 +10,7 @@ import (
 
 var showCmd = &cobra.Command{
 	Use:   "show <recipe name>",
-	Short: "Show a recipe.",
+	Short: "Show a recipe",
 
 	Args: cobra.ExactArgs(1),
 

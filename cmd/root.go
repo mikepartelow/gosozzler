@@ -14,7 +14,7 @@ import (
 
 var rootCmd = &cobra.Command{
 	Use:   "sozzler",
-	Short: "The world's premier cocktail recipe app.",
+	Short: "The world's premier cocktail recipe app",
 }
 
 func init() {

@@ -1,9 +1,11 @@
 package sozzler
 
 import (
+	"bufio"
 	"errors"
 	"fmt"
 	"io"
+	"log"
 	"strconv"
 	"strings"
 	"text/scanner"
@@ -90,5 +92,46 @@ func (rp *RecipeParser) ParseComponent(r io.Reader) (*Component, error) {
 }
 
 func (rp *RecipeParser) Parse(r io.Reader) (*Recipe, error) {
-	return nil, ParseError
+	scanner := bufio.NewScanner(r)
+
+	var recipe Recipe
+	var componentsDone bool
+
+	for scanner.Scan() {
+		line := strings.TrimSpace(scanner.Text())
+		if line == "" {
+			if len(recipe.Components) > 0 {
+				componentsDone = true
+			}
+			continue
+		}
+		if recipe.Name != "" && !componentsDone {
+			if c, err := rp.ParseComponent(strings.NewReader(line)); err == nil {
+				recipe.Components = append(recipe.Components, *c)
+				continue
+			}
+		}
+		if recipe.Name == "" {
+			if len(recipe.Components) != 0 || componentsDone {
+				// name can't come after components
+				return nil, ParseError
+			}
+			recipe.Name = line
+			continue
+		}
+		if len(recipe.Notes) != 0 {
+			recipe.Notes += "\n"
+		}
+		recipe.Notes += line
+		continue
+	}
+	if err := scanner.Err(); err != nil {
+		log.Printf("Error during scanning: %v", err)
+	}
+
+	if recipe.Name == "" || len(recipe.Components) == 0 {
+		return nil, ParseError
+	}
+
+	return &recipe, nil
 }

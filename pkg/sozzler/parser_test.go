@@ -3,24 +3,14 @@ package sozzler_test
 import (
 	"fmt"
 	"mp/sozzler/pkg/sozzler"
+	"os"
 	"strings"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
+	"github.com/stretchr/testify/require"
+	"gopkg.in/yaml.v3"
 )
-
-// func TestParseInvalidRecipe(t *testing.T) {
-// 	for _, suffix := range []string{"0", "0a", "0b"} {
-// 		file, err := os.Open(fmt.Sprintf("testdata/invalid%s.txt", suffix))
-// 		require.NoError(t, err)
-// 		defer func() { _ = file.Close() }()
-
-// 		parser := sozzler.RecipeParser{}
-
-// 		_, err = parser.Parse(file)
-// 		assert.ErrorAs(t, err, &sozzler.ParseError{})
-// 	}
-// }
 
 func TestComponents(t *testing.T) {
 	testCases := []struct {
@@ -172,12 +162,59 @@ func TestComponents(t *testing.T) {
 	}
 }
 
-// func TestParseValidRecipe(t *testing.T) {
-// 	for _, suffix := range []string{"0", "0a", "0b"} {
-// 		data, err := os.ReadFile(fmt.Sprintf("testdata/recipe%s.txt", suffix))
-// 		require.NoError(t, err)
-// 	}
-// }
+func TestInvalidRecipe(t *testing.T) {
+	for _, suffix := range []string{"0", "1", "0"} {
+		file, err := os.Open(fmt.Sprintf("testdata/invalid%s.txt", suffix))
+		require.NoError(t, err)
+		defer func() { _ = file.Close() }()
+
+		parser := sozzler.RecipeParser{}
+
+		_, err = parser.Parse(file)
+		assert.ErrorIs(t, err, sozzler.ParseError)
+	}
+}
+
+func TestValidRecipe(t *testing.T) {
+	for _, suffix := range []string{"0", "1", "2", "3", "4"} {
+		var want sozzler.Recipe
+
+		fileW, err := os.Open(fmt.Sprintf("testdata/recipe%s.yaml", suffix))
+		require.NoError(t, err)
+		defer func() { _ = fileW.Close() }()
+
+		err = yaml.NewDecoder(fileW).Decode(&want)
+		require.NoError(t, err)
+
+		fileG, err := os.Open(fmt.Sprintf("testdata/recipe%s.txt", suffix))
+		require.NoError(t, err)
+		defer func() { _ = fileG.Close() }()
+
+		p := sozzler.RecipeParser{}
+		got, err := p.Parse(fileG)
+		assert.NoError(t, err)
+
+		assertSame(t, &want, got)
+	}
+}
+
+func assertSame(t *testing.T, want *sozzler.Recipe, got *sozzler.Recipe) {
+	t.Helper()
+	assert.Equal(t, want.Name, got.Name)
+	assert.Equal(t, want.Notes, got.Notes)
+	assert.Equal(t, len(want.Components), len(got.Components))
+
+	for _, wantC := range want.Components {
+		foundIt := false
+		for _, gotC := range got.Components {
+			if wantC == gotC {
+				foundIt = true
+				break
+			}
+		}
+		assert.True(t, foundIt, fmt.Sprintf("wanted %v in %v", wantC, got.Components))
+	}
+}
 
 func must[T any](thing T, err error) T {
 	if err != nil {
