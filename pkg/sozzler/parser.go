@@ -13,7 +13,7 @@ import (
 
 type RecipeParser struct{}
 
-var ParseError = errors.New("Parse Error")
+var ErrParseError = errors.New("Parse Error")
 
 func (rp *RecipeParser) ParseComponent(r io.Reader) (*Component, error) {
 	var s scanner.Scanner
@@ -30,7 +30,7 @@ func (rp *RecipeParser) ParseComponent(r io.Reader) (*Component, error) {
 
 		if text == "/" {
 			if slashed {
-				return nil, ParseError
+				return nil, ErrParseError
 			}
 			slashed = true
 			continue
@@ -44,7 +44,7 @@ func (rp *RecipeParser) ParseComponent(r io.Reader) (*Component, error) {
 		}
 		if len(words) != 0 {
 			// it's an int, but we've already added a word, so input is like "1foo2"
-			return nil, ParseError
+			return nil, ErrParseError
 		}
 		if numerator == 0 {
 			// numerator hasn't been set yet (probably)
@@ -85,7 +85,7 @@ func (rp *RecipeParser) ParseComponent(r io.Reader) (*Component, error) {
 
 	invalidComponent := Component{}
 	if c == invalidComponent || c.Ingredient == "" {
-		return nil, ParseError
+		return nil, ErrParseError
 	}
 
 	return &c, nil
@@ -114,7 +114,7 @@ func (rp *RecipeParser) Parse(r io.Reader) (*Recipe, error) {
 		if recipe.Name == "" {
 			if len(recipe.Components) != 0 || componentsDone {
 				// name can't come after components
-				return nil, ParseError
+				return nil, ErrParseError
 			}
 			recipe.Name = line
 			continue
@@ -130,7 +130,7 @@ func (rp *RecipeParser) Parse(r io.Reader) (*Recipe, error) {
 	}
 
 	if recipe.Name == "" || len(recipe.Components) == 0 {
-		return nil, ParseError
+		return nil, ErrParseError
 	}
 
 	return &recipe, nil

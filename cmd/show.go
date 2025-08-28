@@ -26,7 +26,7 @@ var showCmd = &cobra.Command{
 		}
 
 		scale, _ := cmd.Flags().GetInt("scale")
-		for idx, _ := range recipe.Components {
+		for idx := range recipe.Components {
 			recipe.Components[idx].Quantity = recipe.Components[idx].Quantity.Scale(scale)
 		}
 

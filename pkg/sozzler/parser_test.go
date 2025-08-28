@@ -116,39 +116,39 @@ func TestComponents(t *testing.T) {
 		// sad paths
 		{
 			given:   "",
-			wantErr: sozzler.ParseError,
+			wantErr: sozzler.ErrParseError,
 		},
 		{
 			given:   "/",
-			wantErr: sozzler.ParseError,
+			wantErr: sozzler.ErrParseError,
 		},
 		{
 			given:   "1/2",
-			wantErr: sozzler.ParseError,
+			wantErr: sozzler.ErrParseError,
 		},
 		{
 			given:   "1",
-			wantErr: sozzler.ParseError,
+			wantErr: sozzler.ErrParseError,
 		},
 		{
 			given:   "1//2 egg",
-			wantErr: sozzler.ParseError,
+			wantErr: sozzler.ErrParseError,
 		},
 		{
 			given:   "1/2/ egg",
-			wantErr: sozzler.ParseError,
+			wantErr: sozzler.ErrParseError,
 		},
 		{
 			given:   "1/2/3 egg",
-			wantErr: sozzler.ParseError,
+			wantErr: sozzler.ErrParseError,
 		},
 		{
 			given:   "ounce",
-			wantErr: sozzler.ParseError,
+			wantErr: sozzler.ErrParseError,
 		},
 		{
 			given:   "1.5 oz egg",
-			wantErr: sozzler.ParseError,
+			wantErr: sozzler.ErrParseError,
 		},
 	}
 	for i, tC := range testCases {
@@ -171,7 +171,7 @@ func TestInvalidRecipe(t *testing.T) {
 		parser := sozzler.RecipeParser{}
 
 		_, err = parser.Parse(file)
-		assert.ErrorIs(t, err, sozzler.ParseError)
+		assert.ErrorIs(t, err, sozzler.ErrParseError)
 	}
 }
 
