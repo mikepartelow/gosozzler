@@ -53,7 +53,7 @@ func (rc *recipeCard) Ingredients() string {
 		if x := lipgloss.Width(fmt.Sprint(c.Quantity)); x > qtyW {
 			qtyW = x
 		}
-		if x := lipgloss.Width(strings.TrimSpace(fmt.Sprint(c.Units))); x > unitW {
+		if x := lipgloss.Width(strings.TrimSpace(fmt.Sprint(c.Unit))); x > unitW {
 			unitW = x
 		}
 	}
@@ -63,7 +63,7 @@ func (rc *recipeCard) Ingredients() string {
 	var rows []string
 	for _, c := range sozzler.FancyOrder(rc.recipe.Components) {
 		q := colQty.Render(fmt.Sprint(c.Quantity))
-		u := colUnit.Render(strings.TrimSpace(fmt.Sprint(c.Units)))
+		u := colUnit.Render(strings.TrimSpace(fmt.Sprint(c.Unit)))
 		ing := ingStyle.Render(fmt.Sprint(c.Ingredient))
 		row := lipgloss.JoinHorizontal(lipgloss.Left, bullet, q, " ", u, "  ", ing)
 		rows = append(rows, row)

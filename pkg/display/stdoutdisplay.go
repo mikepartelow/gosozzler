@@ -23,9 +23,9 @@ func (d *StdoutDisplay) Show(recipe *sozzler.Recipe) {
 	d.printName(recipe)
 	for _, c := range sozzler.FancyOrder(recipe.Components) {
 		if d.Plain {
-			fmt.Println(c.Quantity, c.Units, c.Ingredient)
+			fmt.Println(c.Quantity, c.Unit, c.Ingredient)
 		} else {
-			fmt.Println("  ", c.Quantity, c.Units, c.Ingredient)
+			fmt.Println("  ", c.Quantity, c.Unit, c.Ingredient)
 		}
 	}
 	if !d.Plain {

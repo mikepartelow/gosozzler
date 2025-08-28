@@ -1,0 +1,18 @@
+name: Banana Fabrication
+components:
+  - ingredient: Rhum agricole
+    quantity: 2
+    unit: oz
+  - ingredient: Clement Créole Shrubb
+    quantity: 3/4
+    unit: oz
+  - ingredient: banana juice
+    quantity: 1/2
+    unit: oz
+  - ingredient: bitters
+    quantity: 1/8
+    unit: dash
+  - ingredient: Lime wheel
+text: |-
+  Shake ingredients with ice. Stir ingredients with dry ice. Correct spelling errors, strain into chilled coconut shell.
+  Garnish with pickled spam.
