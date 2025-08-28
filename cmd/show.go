@@ -15,8 +15,8 @@ var showCmd = &cobra.Command{
 	Args: cobra.ExactArgs(1),
 
 	Run: func(cmd *cobra.Command, args []string) {
-		catalog := cmd.Context().Value("catalog").(*sozzler.RecipeCatalog)
-		display := cmd.Context().Value("display").(display.Display)
+		catalog := cmd.Context().Value(catalogKey{}).(*sozzler.RecipeCatalog)
+		display := cmd.Context().Value(displayKey{}).(display.Display)
 
 		name := args[0]
 		recipe, ok := catalog.Find(name)

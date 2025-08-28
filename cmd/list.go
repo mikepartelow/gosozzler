@@ -15,8 +15,8 @@ var listCmd = &cobra.Command{
 	Short: "List and search recipes",
 	Args:  cobra.NoArgs,
 	RunE: func(cmd *cobra.Command, args []string) error {
-		catalog := cmd.Context().Value("catalog").(*sozzler.RecipeCatalog)
-		display := cmd.Context().Value("display").(display.Display)
+		catalog := cmd.Context().Value(catalogKey{}).(*sozzler.RecipeCatalog)
+		display := cmd.Context().Value(displayKey{}).(display.Display)
 
 		verbose, _ := cmd.Flags().GetBool("verbose")
 
@@ -27,6 +27,7 @@ var listCmd = &cobra.Command{
 
 		if len(predicates) == 0 {
 			display.List(catalog.Recipes)
+
 			return nil
 		}
 

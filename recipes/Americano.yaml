@@ -1,28 +1,20 @@
 ---
 rating: 4
 components:
-  -
-    quantity: '3/2'
+  - quantity: '3/2'
     ingredient: 'Sweet Vermouth'
     unit: 'oz'
-    index: 1
-  -
-    quantity: '1/1'
+  - quantity: '1/1'
     ingredient: 'Orange Slice'
     unit: ''
-    index: 3
-  -
-    quantity: '3/2'
+  - quantity: '3/2'
     ingredient: 'Campari'
     unit: 'oz'
-    index: 0
-  -
-    quantity: '2/1'
+  - quantity: '2/1'
     ingredient: 'Club Soda'
     unit: 'oz'
-    index: 2
 name: 'Americano'
 text: |
   Pour vermouth and Campari into ice-filled highball, top with club soda to taste. Garnish with orange slice.
-  
+
   Use a vermouth that stands up to the Campari but does not overpower it.

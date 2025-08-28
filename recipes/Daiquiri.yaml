@@ -1,20 +1,14 @@
 ---
 rating: 5
 components:
-  -
-    quantity: '1/1'
+  - quantity: '1/1'
     ingredient: 'Simple Syrup'
     unit: 'oz'
-    index: 1
-  -
-    quantity: '3/4'
+  - quantity: '3/4'
     ingredient: 'Lime Juice'
     unit: 'oz'
-    index: 2
-  -
-    quantity: '2/1'
+  - quantity: '2/1'
     ingredient: 'Light Rum'
     unit: 'oz'
-    index: 0
 name: 'Daiquiri'
 text: 'Shake well with ice. Strain into chilled cocktail glass.'

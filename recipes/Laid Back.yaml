@@ -1,40 +1,26 @@
 ---
 rating: 5
 components:
-  -
-    quantity: '3/2'
+  - quantity: '3/2'
     ingredient: 'Grapefruit Juice'
     unit: 'oz'
-    index: 1
-  -
-    quantity: '1/1'
+  - quantity: '1/1'
     ingredient: 'Turbinado Sugar'
     unit: 'tsp'
-    index: 5
-  -
-    quantity: '1/4'
+  - quantity: '1/4'
     ingredient: 'Lime Juice'
     unit: 'oz'
-    index: 3
-  -
-    quantity: '3/2'
+  - quantity: '3/2'
     ingredient: 'Old Raj Gin 110 Proof'
     unit: 'oz'
-    index: 0
-  -
-    quantity: '1/1'
+  - quantity: '1/1'
     ingredient: 'Ginger Syrup'
     unit: 'oz'
-    index: 2
-  -
-    quantity: '0/1'
+  - quantity: '0/1'
     ingredient: 'Fee Brothers Aromatic Bitters'
     unit: ''
-    index: 6
-  -
-    quantity: '1/4'
+  - quantity: '1/4'
     ingredient: 'Joseph Cartron Pamplemousse Rose'
     unit: 'oz'
-    index: 4
 name: 'Laid Back'
 text: 'Shake ingredients without ice to dissolve turbinado sugar. Shake with ice, serve in chilled rocks glass. Garnish artistically. Put your mind on your money.'

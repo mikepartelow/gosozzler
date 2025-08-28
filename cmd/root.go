@@ -46,8 +46,8 @@ func init() {
 
 		}
 
-		ctx := context.WithValue(cmd.Context(), "catalog", &catalog)
-		ctx = context.WithValue(ctx, "display", d)
+		ctx := context.WithValue(cmd.Context(), catalogKey{}, &catalog)
+		ctx = context.WithValue(ctx, displayKey{}, d)
 		cmd.SetContext(ctx)
 
 		return nil
@@ -60,3 +60,6 @@ func Execute() {
 		os.Exit(1)
 	}
 }
+
+type catalogKey struct{}
+type displayKey struct{}

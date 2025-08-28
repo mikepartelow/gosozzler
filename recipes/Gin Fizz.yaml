@@ -1,25 +1,17 @@
 ---
 rating: 3
 components:
-  -
-    quantity: '2/1'
+  - quantity: '2/1'
     ingredient: 'Club Soda'
     unit: 'oz'
-    index: 3
-  -
-    quantity: '1/1'
+  - quantity: '1/1'
     ingredient: 'Simple Syrup'
     unit: 'oz'
-    index: 2
-  -
-    quantity: '3/4'
+  - quantity: '3/4'
     ingredient: 'Lemon Juice'
     unit: 'oz'
-    index: 1
-  -
-    quantity: '3/2'
+  - quantity: '3/2'
     ingredient: 'Gin'
     unit: 'oz'
-    index: 0
 name: 'Gin Fizz'
 text: 'Shake with ice, strain into an ice filled highball glass. Fill with club soda (1 to 2 ounces, to taste).'

@@ -42,7 +42,7 @@ func (rc *RecipeCatalog) Load(recipesDir string) error {
 
 		var recipe Recipe
 		err = yaml.NewDecoder(file).Decode(&recipe)
-		file.Close()
+		_ = file.Close()
 
 		if err != nil {
 			return fmt.Errorf("error decoding recipe %q: %w", filename, err)
